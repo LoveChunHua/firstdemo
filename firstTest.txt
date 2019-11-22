@@ -1,0 +1,7 @@
+让git仓库来管理文件
+1、git add firstTest.txt
+2、git status
+3、git commit -m "first commit" 后面的-m是给一个消息提示我们是第一次提交
+4、git config --global user.email = 18765861848@163.com
+5、git config --global user.name = sunkai
+6、git commit -m "first commit"
