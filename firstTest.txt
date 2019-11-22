@@ -5,3 +5,4 @@
 4、git config --global user.email = 18765861848@163.com
 5、git config --global user.name = sunkai
 6、git commit -m "first commit"
+7、git push 将本地到github仓库
