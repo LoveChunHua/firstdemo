@@ -8,6 +8,13 @@
 7、git push 将本地到github仓库
 如果不同的人往仓库里提交，需要先git pull命令，如果两个人的修改冲突应该处理冲突
 
+新建仓库将项目导入：
+git init
+git add .
+git commit -m "message"
+git remote add origin https://github.com/LoveChunHua/MysqlJDBCTest(刚创建的仓库名称).git
+git push -u origin master
+
 
 团队协作分支开发模式
 创建一个分支 git branch branch1
