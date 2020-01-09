@@ -8,6 +8,10 @@
 7、git push 将本地到github仓库
 如果不同的人往仓库里提交，需要先git pull命令，如果两个人的修改冲突应该处理冲突
 
+团队协作分支开发模式
+创建一个分支 git branch branch1
+切换到当前分支 git checkout branch1
+
 新建仓库将项目导入：
 git init
 git add .
@@ -15,7 +19,13 @@ git commit -m "message"
 git remote add origin https://github.com/LoveChunHua/MysqlJDBCTest(刚创建的仓库名称).git
 git push -u origin master
 
+deploye key:
+ssh-keygen -t rsa -b 4096 -C "18765861848@163.com"
+Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter] 需要修改id_rsa地址
+eval $(ssh-agent -s)  打开管理密钥的ssh-agent
+ssh-add ~/.ssh/jdbc_id_rsa  添加私钥到ssh-agent，jdbc_id_rsa是自己定义的名称
+clip < ~/.ssh/id_rsa.pub 复制公钥，并添加到项目中
 
-团队协作分支开发模式
-创建一个分支 git branch branch1
-切换到当前分支 git checkout branch1
+
+
+
